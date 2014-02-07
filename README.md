@@ -20,7 +20,7 @@ You can :
  * Move : click on the Blob, it follow your cursor.
 
 
-Remark : Each blob bring a light and you house have a light too.
+Remark : Each blob bring a light and your house have a light too.
 
 Second remark : Fireworks still visible on the top of dark (so you can see when the ai come to destruct you house !
 
@@ -45,7 +45,7 @@ You need a recent compiler (gcc or clang) because beblob was written in c++11.
  * make
 
 Warning, to run the game need to be in same directory of blob.pack file !
-to put the blob.pack (from assets directory) in the same folder of you bin
+to put the blob.pack (from assets directory) in the same folder of your bin
 and launch it !
 
 ## Licence
