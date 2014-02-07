@@ -34,6 +34,13 @@ You need to install libzip :
 and SFML 2.0 or higher :
  * http://www.sfml-dev.org
 
+
+#### From precompiled bin :
+
+https://github.com/bechu/BeBlob/releases
+
+#### From source code :
+
 To compile by yourself :
 
 You need a recent compiler (gcc or clang) because beblob was written in c++11.
