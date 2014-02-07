@@ -14,13 +14,13 @@ Next you can control your blob, the concept of the game is to protect your home 
 and trying to destruct the home of the AI.
 
 You can :
- * Eat : click on the Blob and right click on a flower, the blob eat the flower and after some food is able to split itself;
+ * Eat : click on the Blob and right click on a flower, the blob eat the flower and when the blob have enough eat, it is able to split itself;
  * Build : click on the Blob and right click on somewere block is empty, the blob build a block in place;
  * Destruct : click on the Blob and right click on wall, the blob will hit the block.
  * Move : click on the Blob, it follow your cursor.
 
 
-Remark : Each blob care a light and you house have a light too.
+Remark : Each blob bring a light and you house have a light too.
 
 Second remark : Fireworks still visible on the top of dark (so you can see when the ai come to destruct you house !
 
