@@ -3,10 +3,27 @@
 BeBlob is a basic strategy video game based on the original idea :
 http://www.blobsallad.se/
 
-![width:200px](images/welcome.png?raw=true)
-![width:200px](images/ingame.png?raw=true)
+![](images/welcome.png?raw=true)
+![](images/ingame.png?raw=true)
 
 ## How to play
+
+First select a seed and a color, then click on Play !
+
+Next you can control your blob, the concept of the game is to protect your home (the house with same color of you blob)
+and trying to destruct the home of the AI.
+
+You can :
+ * Eat : click on the Blob and right click on a flower, the blob eat the flower and after some food is able to split itself;
+ * Build : click on the Blob and right click on somewere block is empty, the blob build a block in place;
+ * Destruct : click on the Blob and right click on wall, the blob will hit the block.
+ * Move : click on the Blob, it follow your cursor.
+
+
+Remark : Each blob care a light and you house have a light too.
+
+Second remark : Fireworks still visible on the top of dark (so you can see when the ai come to destruct you house !
+
 ## Install
 
 ### For linux users :
