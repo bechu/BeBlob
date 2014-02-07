@@ -1,0 +1,10 @@
+*.log
+*~
+*.[oa]
+*.user
+*.app
+*.log
+*-build*
+*.autosave
+*.txt.user
+
