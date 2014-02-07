@@ -12,12 +12,14 @@ http://www.blobsallad.se/
 
 You need to install libzip :
  * sudo apt-get install libzip-dev
+
 and SFML 2.0 or higher :
  * http://www.sfml-dev.org
 
+To compile by yourself :
+
 You need a recent compiler (gcc or clang) because beblob was write in c++11.
 
-To compile by yourself :
  * git clone ...
  * cd source
  * mkdir build && cd build
@@ -45,9 +47,9 @@ https://github.com/alecthomas/entityx
 for the event system I used simple signal :
 https://testbit.eu/2013/cpp11-signal-system-performance/
 
-and finaly to genreate the world I used this perlin noise implementation :
-https://github.com/sol-prog/Perlin_Noise
-
-Light was inspire from this tutorial :
+Light engine was inspire from this tutorial :
 http://gregouar.developpez.com/tutoriels/jeux/moteur-lumieres-dynamiques-2d/
+
+and finaly to generate the world I used this perlin noise implementation :
+https://github.com/sol-prog/Perlin_Noise
 
