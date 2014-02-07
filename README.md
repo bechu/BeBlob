@@ -3,9 +3,10 @@
 BeBlob is a basic strategy video game based on the original idea :
 http://www.blobsallad.se/
 
-![](images/welcome.png?raw=true)
-![](images/ingame.png?raw=true)
+![width:200px](images/welcome.png?raw=true)
+![width:200px](images/ingame.png?raw=true)
 
+## How to play
 ## Install
 
 ### For linux users :
@@ -20,7 +21,7 @@ To compile by yourself :
 
 You need a recent compiler (gcc or clang) because beblob was write in c++11.
 
- * git clone ...
+ * git clone ..
  * cd source
  * mkdir build && cd build
  * cmake ..
