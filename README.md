@@ -1,4 +1,5 @@
-# BeBlob
+BeBlob [![Build Status](https://travis-ci.org/bechu/BeBlob.png?branch=master)](https://travis-ci.org/bechu/BeBlob)
+======
 
 BeBlob is a basic strategy video game based on the original idea :
 http://www.blobsallad.se/
