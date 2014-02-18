@@ -64,6 +64,7 @@ public:
     void receive(const event::UI::Resume& event);
 
 private:
+    /// every game loop time (in ms) the ai compute ideas
     constexpr static int kGameLoopTime = 1000;
 
     template <typename T>
@@ -73,11 +74,15 @@ private:
 
     void giveJob(utils::Job::Ptr job);
 
+    /// default value for timeout
     double timeout_ = kGameLoopTime;
-
+    /// a copy of the game entity
     ecs::Entity Game;
-    int team_count_ = 2;
+    /// number of team
+    int team_count_ = 0;
+    /// list of team
     std::vector<ecs::Entity> Teams;
+    /// disable/enable the logic system
     bool disable_ = false;
 };
 

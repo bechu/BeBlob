@@ -60,10 +60,15 @@ public:
 
     ecs::Entity getLand(component::LandSolid::Ptr land);
 private:
+    /// copy game entity
     ecs::Entity Game;
+    /// disable/enable physic system
     bool disable = false;
+    /// the quadtree
     physic::QuadTree quadtree_;
+    /// env contains world limits
     component::Env env_;
+    /// the current selected blob
     ecs::Entity selected_;
 };
 
