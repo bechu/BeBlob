@@ -20,6 +20,7 @@
 
 #include <cmath>
 
+#include "math/constants.h"
 #include "light.h"
 
 namespace beblob
@@ -45,7 +46,7 @@ void Light::compute(Obstacle::List &obstacles)
 {
   _shapes.clear();
 
-  float angle = static_cast<float>((M_PI*2) / float(_quality));
+  float angle = static_cast<float>((PI*2) / float(_quality));
 
   for(int i=0;i<_quality;++i)
   {
@@ -213,8 +214,8 @@ void DirectionalLight::compute(Obstacle::List &obstacles)
 {
   _shapes.clear();
 
-  float angle     = static_cast<float>(_angle * M_PI / 180.0f);
-  float o_angle   = static_cast<float>(_openingAngle * M_PI / 180.0f);
+  float angle     = static_cast<float>(_angle * PI / 180.0f);
+  float o_angle   = static_cast<float>(_openingAngle * PI / 180.0f);
 
   addTriangle(
         sf::Vector2f(_radius*cos( float(angle + o_angle * 0.5) ),

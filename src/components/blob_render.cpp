@@ -20,6 +20,7 @@
 #include "world.h"
 #include "sf/hsl.h"
 #include "math/vector.h"
+#include "math/constants.h"
 
 namespace beblob
 {
@@ -73,7 +74,7 @@ void BlobRender::computeFace(double dt,
     float angle = std::acos(math::cross(orientation, up));
     if(orientation.x > 0.0f)
         angle = -angle;
-    float degs = 360.0f * angle / (2.0f * M_PI);
+    float degs = 360.0f * angle / (2.0f * PI);
 
     change-=dt;
     if(change < 0)
@@ -121,7 +122,7 @@ void BlobRender::compute(double dt,
     ring_.clear();
     state_.clear();
     float q = 30;
-    float angleStep = 2.0 * M_PI / q;
+    float angleStep = 2.0 * PI / q;
     for(float i=0;i<=q+1;i++)
     {
         sf::Vector2f v;
@@ -169,7 +170,7 @@ void BlobRender::Arc::compute(const sf::Vector2f& p,
     int count = 60;
     for(int i=count*startDeg;i<=count*numDegs;++i)
     {
-        float angle = i * 2 * M_PI / count - M_PI / 2;
+        float angle = i * 2 * PI / count - PI / 2;
         float x = p.x + std::cos(angle) * aRadius;
         float y = p.y + std::sin(angle) * aRadius;
         sf::Vertex v;
@@ -221,7 +222,7 @@ void BlobRender::Eye::open(BlobSolid& physic,
     float y = -0.6f*physic.getRadius();
     float deltaY = mouse.y - (y+getPosition().y);
     float deltaX = mouse.x - (x+getPosition().x);
-    float angle = atan2(deltaY, deltaX) - (getRotation()/180.0*M_PI);
+    float angle = atan2(deltaY, deltaX) - (getRotation()/180.0*PI);
     x += std::cos(angle) * radius * 0.5;
     y += std::sin(angle) * radius * 0.5;
     compute(sf::Vector2f(x, y),

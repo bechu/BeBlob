@@ -20,6 +20,7 @@
 #include "math/bezier.h"
 #include "sf/curve.h"
 #include "math/range.h"
+#include "math/constants.h"
 #include "graphic/chart_colors.h"
 #include "world.h"
 
@@ -81,7 +82,7 @@ std::vector<sf::Vector2f> Flower::Petal::get(unsigned int width,
                                              unsigned int height,
                                              unsigned int rotation)
 {
-    float angle = rotation/180.0*M_PI;
+    float angle = rotation/180.0*PI;
     float s = sin(angle);
     float c = cos(angle);
     std::vector<sf::Vector2f> points;

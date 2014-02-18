@@ -23,6 +23,7 @@
 #include "math/random.h"
 #include "math/vector.h"
 #include "math/math.h"
+#include "math/constants.h"
 #include "blob_solid.h"
 
 namespace beblob
@@ -39,7 +40,7 @@ BlobSolid::BlobSolid(const sf::Vector2f& position) :
     for(i = 0; i < kNumPointMasses; i++)
     {
         float t = static_cast<float>(i) /
-                static_cast<float>(kNumPointMasses) * M_PI * 2.0f;
+                static_cast<float>(kNumPointMasses) * PI * 2.0f;
         pointmasses_[i] =
                 physic::PointMass(position.x + std::cos(t) * radius_,
                                   position.y + std::sin(t) * radius_, 1.0f);
@@ -140,7 +141,7 @@ void BlobSolid::pump()
     float targetVolume, actualVolume, scaleFactor;
     sf::Vector2f tMiddle;
 
-    targetVolume = radius_ * radius_ * M_PI * 1.5f;
+    targetVolume = radius_ * radius_ * PI * 1.5f;
     actualVolume = computeVolume();
 
     if(actualVolume < targetVolume * 0.0001f)

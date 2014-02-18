@@ -23,17 +23,21 @@ You can :
 
 Remark : Each blob bring a light and your house have a light too.
 
-Second remark : Fireworks still visible on the top of dark (so you can see when the ai come to destruct you house !
+Second remark : Fireworks still visible on the top of dark (so you can see when the ai come to destruct your house !
 
 ## Install
 
 ### For linux users :
 
-You need to install libzip :
- * sudo apt-get install libzip-dev
+You need to install some libs :
+  - sudo apt-get install libpthread-stubs0 libgl1-mesa libx11 libxrandr libfreetype6 libglew1.5 libjpeg8 libgpgme11 libsndfile1 libopenal libjpeg62 libzip
 
 and SFML 2.0 or higher :
  * http://www.sfml-dev.org
+  - wget http://www.sfml-dev.org/download/sfml/2.1/SFML-2.1-linux-gcc-64bits.tar.bz2
+  - tar xf SFML-2.1-linux-gcc-64bits.tar.bz2
+  - sudo cp -r SFML-2.1/lib/* /usr/local/lib/.
+  - sudo cp -r SFML-2.1/include/* /usr/local/include/.
 
 
 #### From precompiled bin :
@@ -46,13 +50,9 @@ To compile by yourself :
 
 You need a recent compiler (gcc or clang) because beblob was written in c++11.
 
- * git clone ..
- * cd source
- * mkdir build && cd build
- * cmake ..
- * make
+See the travis file to compile the game.
 
-Warning, to run the game need to be in same directory of blob.pack file !
+Be careful about assets, to run the game need to be in same directory of blob.pack file !
 to put the blob.pack (from assets directory) in the same folder of your bin
 and launch it !
 

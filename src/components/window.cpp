@@ -25,7 +25,6 @@
 #include "math/math.h"
 #include "ecs/manager.h"
 #include "world.h"
-#include <X11/Xlib.h>
 //#include "physic/blob/blobcollective.h"
 
 namespace beblob

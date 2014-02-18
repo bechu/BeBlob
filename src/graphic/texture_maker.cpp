@@ -17,13 +17,14 @@
 /////////////////////////////////////////////////////////////////////////
 
 #include <iostream>
-#include <cmath>
+#include <math.h>
 #include <utility>
 #include <iostream>
 
 #include "texture_maker.h"
 #include "common/unused.h"
 #include "math/vector.h"
+#include "math/constants.h"
 
 namespace beblob
 {
@@ -92,7 +93,7 @@ DiagonalPatternGenerator::DiagonalPatternGenerator(math::Random::Seed seed,
 
 sf::Color DiagonalPatternGenerator::color(uint32_t x, uint32_t y)
 {
-    static float angle = degree_/180.0*M_PI;
+    static float angle = degree_/180.0*PI;
     float s = - sin(angle);
     float c = - cos(angle);
     sf::Vector2f start(s, c);
