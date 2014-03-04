@@ -79,3 +79,7 @@ http://gregouar.developpez.com/tutoriels/jeux/moteur-lumieres-dynamiques-2d/
 and finaly to generate the world I used this perlin noise implementation :
 https://github.com/sol-prog/Perlin_Noise
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/bechu/beblob/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
