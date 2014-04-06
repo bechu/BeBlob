@@ -44,6 +44,8 @@ and SFML 2.0 or higher :
 
 https://github.com/bechu/BeBlob/releases
 
+	Thanks to Sébastien for the Windows Setup !
+
 #### From source code :
 
 To compile by yourself :
